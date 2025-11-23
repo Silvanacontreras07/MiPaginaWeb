@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Profesional</title>
+    <style>
+        /* ESTILOS GENERALES (CSS) */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* CONTENEDOR PRINCIPAL */
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        /* ENCABEZADO */
+        header {
+            text-align: center;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #2c3e50;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+            color: #7f8c8d;
+            font-weight: bold;
+        }
+
+        /* SECCIONES */
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #2980b9;
+            border-left: 5px solid #2980b9;
+            padding-left: 10px;
+            font-size: 1.5em;
+        }
+
+        /* LISTAS Y EXPERIENCIA */
+        .experience-item, .education-item {
+            margin-bottom: 15px;
+        }
+
+        .experience-item h3, .education-item h3 {
+            margin: 0;
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        .date {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+
+        ul.skills {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul.skills li {
+            display: inline-block;
+            background: #e1f5fe;
+            color: #0277bd;
+            padding: 5px 10px;
+            margin: 5px 5px 5px 0;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        /* CONTACTO */
+        .contact-info p {
+            margin: 5px 0;
+        }
+        
+        .contact-info a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* PIE DE PÁGINA */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.8em;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- ENCABEZADO -->
+        <header>
+            <!-- Si tienes una foto, puedes descomentar la linea de abajo y poner la ruta de tu imagen -->
+            <!-- <img src="tu-foto.jpg" alt="Foto de perfil" style="width:150px; border-radius:50%;"> -->
+            <h1>[TU NOMBRE COMPLETO]</h1>
+            <p>[TU PROFESIÓN O TÍTULO]</p>
+        </header>
+
+        <!-- PERFIL -->
+        <section>
+            <h2>Perfil Profesional</h2>
+            <p>
+                Soy un profesional proactivo y dedicado con experiencia en [Menciona tu área principal]. 
+                Me especializo en [Menciona 2 o 3 habilidades clave]. Busco oportunidades para aportar valor 
+                mediante soluciones creativas y eficientes, y seguir creciendo profesionalmente.
+            </p>
+        </section>
+
+        <!-- EXPERIENCIA LABORAL -->
+        <section>
+            <h2>Experiencia Laboral</h2>
+            
+            <div class="experience-item">
+                <h3>Nombre del Puesto | Nombre de la Empresa</h3>
+                <p class="date">Enero 2021 - Presente</p>
+                <ul>
+                    <li>Responsabilidad o logro principal número 1.</li>
+                    <li>Responsabilidad o logro principal número 2.</li>
+                    <li>Liderazgo de equipos y gestión de proyectos.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Nombre del Puesto Anterior | Empresa Anterior</h3>
+                <p class="date">Marzo 2018 - Diciembre 2020</p>
+                <ul>
+                    <li>Descripción breve de tus funciones.</li>
+                    <li>Logro destacado durante este periodo.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- EDUCACIÓN -->
+        <section>
+            <h2>Educación</h2>
+            
+            <div class="education-item">
+                <h3>Nombre de tu Carrera o Grado</h3>
+                <p>Universidad o Institución</p>
+                <p class="date">Graduado en 2018</p>
+            </div>
+            
+            <div class="education-item">
+                <h3>Curso o Certificación Adicional</h3>
+                <p>Plataforma o Institución</p>
+                <p class="date">2022</p>
+            </div>
+        </section>
+
+        <!-- HABILIDADES -->
+        <section>
+            <h2>Habilidades</h2>
+            <ul class="skills">
+                <!-- Edita estas habilidades según tu perfil -->
+                <li>Liderazgo</li>
+                <li>Trabajo en equipo</li>
+                <li>Microsoft Office</li>
+                <li>Gestión de Proyectos</li>
+                <li>Inglés (Intermedio)</li>
+                <li>HTML & CSS</li>
+                <li>Resolución de problemas</li>
+            </ul>
+        </section>
+
+        <!-- CONTACTO -->
+        <section class="contact-info">
+            <h2>Contacto</h2>
+            <p><strong>Email:</strong> <a href="mailto:tu-email@ejemplo.com">tu-email@ejemplo.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com" target="_blank">linkedin.com/in/tu-usuario</a></p>
+            <p><strong>Teléfono:</strong> +123 456 789</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 [TU NOMBRE]. Creado para GitHub Pages.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
