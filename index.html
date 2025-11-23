@@ -3,205 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil Profesional</title>
+    <title>Perfil Profesional - Derecho</title>
+    
+    <!-- Enlazamos CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Estilos personalizados para perfil legal -->
     <style>
-        /* ESTILOS GENERALES (CSS) */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+            padding-top: 70px;
+            background-color: #f0f2f5;
+            font-family: 'Segoe UI', serif; /* Fuente más seria para derecho */
         }
-
-        /* CONTENEDOR PRINCIPAL */
-        .container {
-            max-width: 800px;
-            margin: 30px auto;
-            background: #fff;
-            padding: 40px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-            border-radius: 8px;
-        }
-
-        /* ENCABEZADO */
-        header {
-            text-align: center;
-            border-bottom: 2px solid #eaeaea;
-            padding-bottom: 20px;
+        .section-title {
+            color: #0c2d48; /* Azul marino serio */
+            border-bottom: 3px solid #b19777; /* Toque dorado/beige elegante */
+            display: inline-block;
             margin-bottom: 20px;
         }
-
-        header h1 {
-            margin: 0;
-            color: #2c3e50;
-            font-size: 2.5em;
+        .card {
+            transition: transform 0.3s;
+            border: none;
+            border-left: 4px solid #0c2d48; /* Borde lateral estilo legal */
         }
-
-        header p {
-            margin: 5px 0 0;
-            font-size: 1.2em;
-            color: #7f8c8d;
-            font-weight: bold;
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
-
-        /* SECCIONES */
-        section {
-            margin-bottom: 30px;
+        .profile-header {
+            background: linear-gradient(135deg, #0c2d48, #2e5c85); /* Degradado azul formal */
+            color: white;
+            padding: 4rem 0;
+            margin-bottom: 2rem;
+            border-radius: 0 0 20px 20px;
         }
-
-        h2 {
-            color: #2980b9;
-            border-left: 5px solid #2980b9;
-            padding-left: 10px;
-            font-size: 1.5em;
-        }
-
-        /* LISTAS Y EXPERIENCIA */
-        .experience-item, .education-item {
-            margin-bottom: 15px;
-        }
-
-        .experience-item h3, .education-item h3 {
-            margin: 0;
-            font-size: 1.1em;
-            color: #333;
-        }
-
-        .date {
-            color: #7f8c8d;
-            font-size: 0.9em;
-            font-style: italic;
-        }
-
-        ul.skills {
-            list-style: none;
-            padding: 0;
-        }
-
-        ul.skills li {
-            display: inline-block;
-            background: #e1f5fe;
-            color: #0277bd;
-            padding: 5px 10px;
-            margin: 5px 5px 5px 0;
-            border-radius: 4px;
-            font-size: 0.9em;
-        }
-
-        /* CONTACTO */
-        .contact-info p {
-            margin: 5px 0;
-        }
-        
-        .contact-info a {
-            color: #2980b9;
-            text-decoration: none;
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        /* PIE DE PÁGINA */
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            font-size: 0.8em;
-            color: #aaa;
+        .badge-skill {
+            background-color: #e3e8ee;
+            color: #0c2d48;
+            border: 1px solid #0c2d48;
         }
     </style>
 </head>
 <body>
 
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Portafolio Jurídico</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#perfil">Perfil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#educacion">Educación</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-outline-light ms-2" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ENCABEZADO PRINCIPAL -->
+    <header class="profile-header text-center">
+        <div class="container">
+            <!-- TÍTULO -->
+            <h1 class="display-4 fw-bold">[TU NOMBRE AQUÍ]</h1>
+            <p class="lead fs-3">Estudiante de Derecho</p>
+            <p class="opacity-75">Derecho Público y Privado | Universidad Científica del Sur</p>
+        </div>
+    </header>
+
     <div class="container">
-        <!-- ENCABEZADO -->
-        <header>
-            <!-- Si tienes una foto, puedes descomentar la linea de abajo y poner la ruta de tu imagen -->
-            <!-- <img src="tu-foto.jpg" alt="Foto de perfil" style="width:150px; border-radius:50%;"> -->
-            <h1>[TU NOMBRE COMPLETO]</h1>
-            <p>[TU PROFESIÓN O TÍTULO]</p>
-        </header>
-
+        
         <!-- PERFIL -->
-        <section>
-            <h2>Perfil Profesional</h2>
-            <p>
-                Soy un profesional proactivo y dedicado con experiencia en [Menciona tu área principal]. 
-                Me especializo en [Menciona 2 o 3 habilidades clave]. Busco oportunidades para aportar valor 
-                mediante soluciones creativas y eficientes, y seguir creciendo profesionalmente.
-            </p>
-        </section>
-
-        <!-- EXPERIENCIA LABORAL -->
-        <section>
-            <h2>Experiencia Laboral</h2>
-            
-            <div class="experience-item">
-                <h3>Nombre del Puesto | Nombre de la Empresa</h3>
-                <p class="date">Enero 2021 - Presente</p>
-                <ul>
-                    <li>Responsabilidad o logro principal número 1.</li>
-                    <li>Responsabilidad o logro principal número 2.</li>
-                    <li>Liderazgo de equipos y gestión de proyectos.</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <h3>Nombre del Puesto Anterior | Empresa Anterior</h3>
-                <p class="date">Marzo 2018 - Diciembre 2020</p>
-                <ul>
-                    <li>Descripción breve de tus funciones.</li>
-                    <li>Logro destacado durante este periodo.</li>
-                </ul>
+        <section id="perfil" class="mb-5">
+            <div class="card shadow-sm p-4">
+                <h2 class="section-title h3">Perfil Profesional</h2>
+                <p class="lead text-muted" style="text-align: justify;">
+                    Soy estudiante de Derecho con formación sólida en las áreas fundamentales del derecho público y privado. 
+                    Me caracterizo por ser una persona responsable, analítica y con capacidad para trabajar en equipo. 
+                    Tengo experiencia preprofesional a través de prácticas en el Ministerio Público, donde desarrollé 
+                    habilidades en redacción jurídica, revisión de expedientes y apoyo en diligencias fiscales. 
+                    Busco seguir fortaleciendo mis competencias y aportar valor en el ámbito jurídico.
+                </p>
             </div>
         </section>
 
-        <!-- EDUCACIÓN -->
-        <section>
-            <h2>Educación</h2>
-            
-            <div class="education-item">
-                <h3>Nombre de tu Carrera o Grado</h3>
-                <p>Universidad o Institución</p>
-                <p class="date">Graduado en 2018</p>
+        <div class="row">
+            <!-- COLUMNA IZQUIERDA: EXPERIENCIA -->
+            <div class="col-lg-8">
+                <section id="experiencia" class="mb-5">
+                    <h2 class="section-title h3">Experiencia Preprofesional</h2>
+                    
+                    <!-- Tarjeta Ministerio Público -->
+                    <div class="card mb-3 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2 flex-wrap">
+                                <h3 class="h5 card-title text-dark mb-0 fw-bold">Practicante Preprofesional</h3>
+                                <span class="badge bg-secondary">Mayo 2025 – Agosto 2025</span>
+                            </div>
+                            <h6 class="card-subtitle mb-3 text-primary">Ministerio Público</h6>
+                            <ul class="card-text mt-3">
+                                <li>Apoyo en la revisión y organización de expedientes fiscales.</li>
+                                <li>Elaboración de borradores de escritos y documentos administrativos.</li>
+                                <li>Asistencia en diligencias y actividades de investigación.</li>
+                                <li>Registro de información en los sistemas institucionales.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
             </div>
-            
-            <div class="education-item">
-                <h3>Curso o Certificación Adicional</h3>
-                <p>Plataforma o Institución</p>
-                <p class="date">2022</p>
+
+            <!-- COLUMNA DERECHA: EDUCACIÓN Y SKILLS -->
+            <div class="col-lg-4">
+                <section id="educacion" class="mb-5">
+                    <h2 class="section-title h3">Educación</h2>
+                    <div class="card shadow-sm mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Carrera de Derecho</h5>
+                            <p class="card-text text-muted mb-1">Universidad Científica del Sur</p>
+                            <small class="text-primary fw-bold">2021 – Actualidad</small>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="habilidades" class="mb-5">
+                    <h2 class="section-title h3">Habilidades</h2>
+                    <div class="d-flex flex-wrap gap-2">
+                        <!-- Extraídas de tu descripción -->
+                        <span class="badge badge-skill rounded-pill p-2">Redacción Jurídica</span>
+                        <span class="badge badge-skill rounded-pill p-2">Revisión de Expedientes</span>
+                        <span class="badge badge-skill rounded-pill p-2">Derecho Público</span>
+                        <span class="badge badge-skill rounded-pill p-2">Derecho Privado</span>
+                        <span class="badge badge-skill rounded-pill p-2">Análisis Crítico</span>
+                        <span class="badge badge-skill rounded-pill p-2">Trabajo en Equipo</span>
+                        <span class="badge badge-skill rounded-pill p-2">Diligencias Fiscales</span>
+                    </div>
+                </section>
             </div>
-        </section>
+        </div>
 
-        <!-- HABILIDADES -->
-        <section>
-            <h2>Habilidades</h2>
-            <ul class="skills">
-                <!-- Edita estas habilidades según tu perfil -->
-                <li>Liderazgo</li>
-                <li>Trabajo en equipo</li>
-                <li>Microsoft Office</li>
-                <li>Gestión de Proyectos</li>
-                <li>Inglés (Intermedio)</li>
-                <li>HTML & CSS</li>
-                <li>Resolución de problemas</li>
-            </ul>
-        </section>
-
-        <!-- CONTACTO -->
-        <section class="contact-info">
-            <h2>Contacto</h2>
-            <p><strong>Email:</strong> <a href="mailto:tu-email@ejemplo.com">tu-email@ejemplo.com</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com" target="_blank">linkedin.com/in/tu-usuario</a></p>
-            <p><strong>Teléfono:</strong> +123 456 789</p>
-        </section>
-
-        <footer>
-            <p>&copy; 2025 [TU NOMBRE]. Creado para GitHub Pages.</p>
+        <!-- PIE DE PÁGINA -->
+        <footer class="text-center text-muted py-4 mt-4 border-top">
+            <p>&copy; 2025. Perfil Profesional Académico.</p>
         </footer>
+
     </div>
+
+    <!-- MODAL DE CONTACTO -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title">Contacto Profesional</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Estoy disponible para nuevas oportunidades laborales y académicas.</p>
+                    <ul class="list-group list-group-flush">
+                        <!-- Edita estos datos -->
+                        <li class="list-group-item">📧 <strong>Email:</strong> correo@ejemplo.com</li>
+                        <li class="list-group-item">🔗 <strong>LinkedIn:</strong> linkedin.com/in/tu-usuario</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
